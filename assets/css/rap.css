@@ -1,0 +1,189 @@
+/*
+ * Comments
+ */
+
+/*
+ * Resets
+ */
+body{
+	margin: 0;
+	padding: 0;
+	}
+
+/*
+ * Helpers
+ */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	}
+ 
+html[xmlns] .clearfix {
+	display: block;
+	}
+ 
+* html .clearfix {
+	height: 1%;
+	}
+.pull-left{
+	float: left;
+	}
+.pull-right{
+	float: right;
+	}
+
+/*
+ * Typography
+ */
+body{
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+	background: #e9eaed;
+	}
+a{
+	text-decoration: none;
+	color: #3b5998;
+	}
+
+/*
+ * Buttons
+ */
+.btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	
+	height: 22px;
+	padding: 0 16px;
+	
+	background: #F6F7F8 url(../img/buttons.png) 0 -21px repeat-x;
+	background-clip: padding-box;
+	
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+	box-sizing: content-box;
+	
+	font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	white-space: nowrap;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	font-weight: bold;
+	line-height: 22px;
+	color:#4e5665;
+	text-shadow:0 1px 0 #fff;
+	
+	cursor: pointer;
+	
+	border-radius: 2px;
+	border: 1px solid;
+	border-color:#cdced0 #c5c6c8 #b6b7b9;
+	
+	}
+	.btn:active{
+		background-position: 0 -178px;
+		}
+	.btn.blue{
+		color: #FFF;
+		background-position: 0 -335px;
+		background-color: #758AB7;
+		border-color: #475D91 #3C5389 #3A5186;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+		}
+		.btn.blue:active{
+			background-position: 0 -492px;
+			}
+	.btn.green{
+		color: #FFF;
+		background-position: 0 -649px;
+		background-color:#6fb554;
+		border-color:#64a643 #59983a #538f36;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+		}
+		.btn.green:active{
+			background-position: 0 -806px;
+			}
+
+/*
+ * Base
+ */
+#rap-house{
+	border-radius: 5px;
+	border: 1px solid #d3d6db;
+	margin: 10px;
+	background: #fff;
+	overflow: hidden;
+	
+	/* Prevent background color leak outs */
+	-webkit-background-clip: padding-box; 
+	-moz-background-clip:    padding; 
+	background-clip:         padding-box;
+	
+	}
+
+/*
+ * Top
+ */
+#rap-house .top{
+	background: #f6f7f8;
+	}
+	#rap-house .top a{
+		font-weight: bold;
+		}
+	#rap-house .top ul{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		border-bottom: 1px solid #D3D6DB;
+		padding: 12px 0 8px 12px;
+		}
+		#rap-house .top ul > li:first-child{
+			padding-left: 0;
+			}
+		#rap-house .top ul li{
+			display: inline-block;
+			padding-left: 10px;
+			}
+		#rap-house .top ul li.active a{
+			color: #333;
+			}
+
+/*
+ * Middle
+ */
+#rap-house .middle .wrap{
+	padding: 5px;
+}
+#rap-house .middle textarea{
+	resize: none;
+	display: block;
+	width: 100%;
+	border: none;
+	background: #fff;
+	font-size: 13px;
+	height: 36px;
+	padding: 8px 0 0 7px;
+	background-color: rgba(0, 0, 0, 0);
+	-webkit-box-sizing: border-box;
+	outline: 0;
+	}
+	#rap-house.focused .middle textarea{
+		min-height: 63px;
+		}
+
+/*
+ * Bottom
+ */
+#rap-house .bottom{
+	display: none;
+	background-color: #F6F7F8;
+	border-top: 1px solid #E9EAED;
+	padding: 8px;
+	}
+	#rap-house.focused .bottom{
+		display: block;
+	}
